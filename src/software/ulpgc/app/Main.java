@@ -1,7 +1,7 @@
 package software.ulpgc.app;
 
 import software.ulpgc.arquitecture.io.FileDinosaurLoader;
-import software.ulpgc.arquitecture.model.CsvDinosaurDeserializer;
+import software.ulpgc.arquitecture.io.CsvDinosaurDeserializer;
 import software.ulpgc.arquitecture.model.Dinosaur;
 
 import java.io.File;
@@ -17,7 +17,7 @@ public class Main {
         Map<String, Integer> dietscount = new HashMap<>();
         Map<String, Integer> periodscount = new HashMap<>();
         for (Dinosaur dinosaur: dinosaurs) {
-            //System.out.println(dinosaur);
+            System.out.println(dinosaur);
             dietscount.put(dinosaur.getDiet(), dietscount.getOrDefault(dinosaur.getDiet(), 0)+1);
             periodscount.put(dinosaur.getPeriod(), periodscount.getOrDefault(dinosaur.getPeriod(), 0)+1);
         }

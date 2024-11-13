@@ -1,7 +1,6 @@
 package software.ulpgc.arquitecture.io;
 
 import software.ulpgc.arquitecture.model.Dinosaur;
-import software.ulpgc.arquitecture.model.DinosaurDeserializer;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,6 +1,8 @@
-package software.ulpgc.arquitecture.model;
+package software.ulpgc.arquitecture.io;
 
-public class CsvDinosaurDeserializer implements DinosaurDeserializer{
+import software.ulpgc.arquitecture.model.Dinosaur;
+
+public class CsvDinosaurDeserializer implements DinosaurDeserializer {
     @Override
     public Dinosaur deserialize(String line) {
         return deserialize(line.split(","));
